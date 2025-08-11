@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Book luxury hotels and resorts worldwide."
+    />
+    <title>Luxury Stay | Book Hotels & Resorts</title>
+  </head>
+  <body>
+    <header>
+      <h1>Luxury Stay</h1>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#offers">Special Offers</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-label="Hero">
+        <h2>Welcome to Your Dream Getaway</h2>
+        <p>
+          Book luxury rooms with breathtaking views and world-class service.
+        </p>
+        <form action="/" aria-label="Hotel Search Form">
+          <label for="checkin">Check-in:</label>
+          <input type="date" id="checkin" name="checkin" required />
+
+          <label for="checkout">Check-out:</label>
+          <input type="date" id="checkout" name="checkout" required />
+
+          <label for="guests">Guests:</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            value="1"
+            required
+          />
+          <label name="Rooms">Choose Rooms:-</label>
+            <input type="radio" name="Rooms" id="Deluxe" />
+            <label for="Deluxe">Deluxe Rooms</label>
+          
+         
+            <input type="radio" name="Rooms" id="Standard" />
+            <label for="Deluxe">Standard Rooms</label>
+         
+
+          <button type="submit">Search</button>
+        </form>
+      </section>
+
+
+      <section aria-label="Available Rooms">
+        <h2>Our Rooms</h2>
+
+        <article>
+          <header>
+            <h3>Deluxe Suite</h3>
+          </header>
+          <figure>
+            <img
+              src="deluxeRoom.jpg"
+              width="200px"
+              height="200px"
+              alt="Deluxe Suite with ocean view"
+            />
+            <figcaption>Deluxe Suite – Ocean View</figcaption>
+          </figure>
+          <p>Spacious room with king-size bed, balcony, and private jacuzzi.</p>
+          <footer>
+            <p><strong>$250</strong> per night</p>
+            <a href="#">Book Now</a>
+          </footer>
+        </article>
+
+        <article>
+          <header>
+            <h3>Standard Room</h3>
+          </header>
+          <figure>
+            <img
+              src="standardRoom.jpg"
+              width="200px"
+              height="200px"
+              alt="Standard Room with city view"
+            />
+            <figcaption>Standard Room – City View</figcaption>
+          </figure>
+          <p>Comfortable room with queen-size bed and modern amenities.</p>
+          <footer>
+            <p><strong>$150</strong> per night</p>
+            <a href="#">Book Now</a>
+          </footer>
+        </article>
+      </section>
+
+      <aside>
+<h2>Wanna learn HTML </h2>
+      
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/kUMe1FH4CHE?si=-sPx7xU75g8jMv6p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </aside>
+      <aside aria-label="Hotel Policies & Quick Facts">
+        
+        <h2>Hotel Policies & Quick Facts</h2>
+        <ul>
+          <li>Check-in: 3:00 PM – Check-out: 11:00 AM</li>
+          <li>Free Wi-Fi throughout the property</li>
+          <li>No pets allowed</li>
+          <li>Complimentary breakfast included</li>
+          <li>24/7 front desk service</li>
+        </ul>
+      </aside>
+
+      <section aria-label="Special Offers">
+        <h2>Special Offers</h2>
+        <ul>
+          <li><strong>Summer Deal:</strong> 20% off for stays over 5 nights</li>
+          <li><strong>Early Bird:</strong> Book 3 months ahead and save 15%</li>
+        </ul>
+      </section>
+
+      <section aria-label="Hotel Gallery">
+        <h2>Gallery</h2>
+        <figure>
+          <img
+            src="InfinityPool.jpg"
+            alt="Infinity pool at sunset"
+            width="300"
+          />
+          <figcaption>Infinity Pool</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="HotelInterior.jpg"
+            alt="Hotel restaurant interior"
+            width="300"
+          />
+          <figcaption>Fine Dining Restaurant</figcaption>
+        </figure>
+      </section>
+
+      <section aria-label="Customer Reviews">
+        <h2>What Our Guests Say</h2>
+
+        <article>
+          <header>
+            <strong>Emily R., New York</strong>
+            <span>★★★★★</span>
+            <time>May 14, 2025</time>
+          </header>
+          <blockquote>
+            “Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nostrum veniam dolor earum culpa tempore!”
+          </blockquote>
+        </article>
+
+        <article>
+          <header>
+            <strong>Daniel M., London</strong>
+            <span>★★★★☆</span>
+            <time>April 28, 2025</time>
+          </header>
+          <blockquote>
+            “Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nostrum atque harum.”
+          </blockquote>
+        </article>
+
+        <article>
+          <header>
+            <strong>Priya &amp; Arjun, Mumbai</strong>
+            <span>★★★★★</span>
+            <time>March 10, 2025</time>
+          </header>
+          <blockquote>
+            “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, laborum.”
+          </blockquote>
+        </article>
+      </section>
+
+      <section aria-label="Contact Information">
+        <h2>Contact Us</h2>
+        <address>
+          Luxury Stay Resort<br />
+          123 Ocean Drive, Miami, FL<br />
+          Phone: <a href="tel:+1234567890">+1 234 567 890</a><br />
+          Email: <a href="mailto:info@luxurystay.com">info@luxurystay.com</a>
+        </address>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Luxury Stay. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
