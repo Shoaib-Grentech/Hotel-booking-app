@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+
+  .header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+
+  .header nav ul {
+    display: flex;
+    gap: 2rem; 
+    list-style: none;
+  }
+  
+  .header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+   +
+  }
+  
+  .header nav a:hover {
+    color: #f0c040; 
+    transition: all 0.2s ease;
+  }
+  
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  
+
+.section1 {
+  background: #2a2a2a;
+  color: #fff;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+
+.section1Div {
+  margin-bottom: 2rem;
+}
+
+.section1Div h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.section1Div strong {
+  color: #ffd700;
+}
+
+.section1Div p {
+  font-size: 1.1rem;
+  max-width:100%;
+  margin: 0 auto;
+}
+
+.section1 form {
+  background:#ffffff1a;
+  padding: 1.29rem;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items:center;
+}
+
+.section1 form label {
+  font-weight: 500;
+}
+
+.section1 form input[type="date"],
+.section1 form input[type="number"] {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.section1 form input[type="radio"] {
+  margin-right: 2rem;
+}
+
+.section1 form button {
+  background: #ffd700;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.section1 form button:hover {
+  background: #ffcc00;
+  transform: scale(1.05);
+}
+
+#section2Header{
+  color:#e3e2e2;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .section1Div h2 {
+    font-size: 2rem;
+  }
+
+  .section1 form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .section1 form input,
+  .section1 form button {
+    width: 100%;
+  }
+}

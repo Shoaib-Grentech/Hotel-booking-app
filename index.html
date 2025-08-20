@@ -7,12 +7,13 @@
       name="description"
       content="Book luxury hotels and resorts worldwide."
     />
+    <link rel="stylesheet" href="style.css">
     <title>Luxury Stay | Book Hotels & Resorts</title>
   </head>
   <body>
-    <header>
+    <header class=" header">
       <h1>Luxury Stay</h1>
-      <nav aria-label="Main Navigation">
+      <nav aria-label="Main Navigation" >
         <ul>
           <li><a href="#rooms">Rooms</a></li>
           <li><a href="#offers">Special Offers</a></li>
@@ -23,11 +24,13 @@
     </header>
 
     <main>
-      <section aria-label="Hero">
-        <h2>Welcome to Your Dream Getaway</h2>
+      <section aria-label="Hero" class="section1">
+        <div class="section1Div">
+          <h2>Welcome to Your <strong>Luxury Stay</strong></h2>
         <p>
           Book luxury rooms with breathtaking views and world-class service.
         </p>
+      </div>
         <form action="/" aria-label="Hotel Search Form">
           <label for="checkin">Check-in:</label>
           <input type="date" id="checkin" name="checkin" required />
@@ -45,23 +48,21 @@
             required
           />
           <label name="Rooms">Choose Rooms:-</label>
-            <input type="radio" name="Rooms" id="Deluxe" />
             <label for="Deluxe">Deluxe Rooms</label>
+            <input type="radio" name="Rooms" id="Deluxe" />
           
-         
-            <input type="radio" name="Rooms" id="Standard" />
+    
             <label for="Deluxe">Standard Rooms</label>
-         
+            <input type="radio" name="Rooms" id="Standard" />
 
           <button type="submit">Search</button>
         </form>
       </section>
 
-
-      <section aria-label="Available Rooms">
-        <h2>Our Rooms</h2>
-
-        <article>
+      <section aria-label="Available Rooms"   >
+        
+        <h2 >Our Rooms</h2>
+        <article >
           <header>
             <h3>Deluxe Suite</h3>
           </header>
@@ -107,25 +108,7 @@
       
       <iframe width="560" height="315" src="https://www.youtube.com/embed/kUMe1FH4CHE?si=-sPx7xU75g8jMv6p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </aside>
-      <aside aria-label="Hotel Policies & Quick Facts">
-        
-        <h2>Hotel Policies & Quick Facts</h2>
-        <ul>
-          <li>Check-in: 3:00 PM – Check-out: 11:00 AM</li>
-          <li>Free Wi-Fi throughout the property</li>
-          <li>No pets allowed</li>
-          <li>Complimentary breakfast included</li>
-          <li>24/7 front desk service</li>
-        </ul>
-      </aside>
-
-      <section aria-label="Special Offers">
-        <h2>Special Offers</h2>
-        <ul>
-          <li><strong>Summer Deal:</strong> 20% off for stays over 5 nights</li>
-          <li><strong>Early Bird:</strong> Book 3 months ahead and save 15%</li>
-        </ul>
-      </section>
+    
 
       <section aria-label="Hotel Gallery">
         <h2>Gallery</h2>
@@ -147,42 +130,6 @@
         </figure>
       </section>
 
-      <section aria-label="Customer Reviews">
-        <h2>What Our Guests Say</h2>
-
-        <article>
-          <header>
-            <strong>Emily R., New York</strong>
-            <span>★★★★★</span>
-            <time>May 14, 2025</time>
-          </header>
-          <blockquote>
-            “Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nostrum veniam dolor earum culpa tempore!”
-          </blockquote>
-        </article>
-
-        <article>
-          <header>
-            <strong>Daniel M., London</strong>
-            <span>★★★★☆</span>
-            <time>April 28, 2025</time>
-          </header>
-          <blockquote>
-            “Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi nostrum atque harum.”
-          </blockquote>
-        </article>
-
-        <article>
-          <header>
-            <strong>Priya &amp; Arjun, Mumbai</strong>
-            <span>★★★★★</span>
-            <time>March 10, 2025</time>
-          </header>
-          <blockquote>
-            “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, laborum.”
-          </blockquote>
-        </article>
-      </section>
 
       <section aria-label="Contact Information">
         <h2>Contact Us</h2>
